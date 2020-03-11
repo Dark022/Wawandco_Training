@@ -1,0 +1,129 @@
+.column {
+    width: 285px;
+    height: 350px;
+    border: dashed 1px black;
+    margin-left: 10px;
+    margin-top: 60px;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.column-3 { 
+    width: 285px;
+    height: 350px;
+    border: dashed 1px black;
+    border-right: none;
+    margin-top: 60px;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+    justify-content: center;  
+}
+
+.body{
+    text-align: center;
+    font-family: Helvetica;
+}
+.page {
+    text-align: center;   
+    margin-top: 20px;    
+
+}
+
+.header {
+    justify-content: center;
+    width: 960px;
+    height: 70px;
+    border: solid 2px black;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+
+.into-content {
+    justify-content: space-around;
+    width: 960px;
+    height: 450px;
+    border: solid 2px black;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;   
+}
+
+.dynamic-content {
+    justify-content: space-evenly;
+    width: 960px;
+    height: 450px;
+    border: solid 2px black;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgb(184,184,184);
+    background: linear-gradient(180deg, rgba(184,184,184,1) 0%, rgba(221,221,221,1) 50%, rgba(250,250,250,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.columns-dc {
+    width: 450px;
+    height: 350px;
+    border: dashed 1px black;
+    margin-top: 60px;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.d-flex { 
+    display: flex;
+}
+.margin {
+    margin: 0 auto 20px auto;
+}
+
+.footer {
+    justify-content: center;
+    width: 960px;
+    height: 70px;
+    border: solid 2px black;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+       width: auto;
+    }
+    .into-content {
+        width: auto;
+        height: auto;
+        flex-flow: column wrap;
+    }
+    .column {
+        width: 90%;
+    }
+    .column-3{
+        width: 90%;
+        border-right: dashed 1px black;
+        border-bottom: none;
+    }
+    .footer{
+        width: auto;
+    }
+    .dynamic-content{
+        
+        width: auto;
+        height: auto;
+        flex-flow: column wrap;
+        padding-bottom: 50px;
+    }
+    .columns-dc{
+        width: 90%;
+    }
+  
+}
